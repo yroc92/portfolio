@@ -129,6 +129,17 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
+ul.bullet-list {
+  padding-left: 8px;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+ul.bullet-list li {
+  list-style: circle;
+  margin-left: 8px;
+}
+
 img, ion-icon, a, button, time, span { display: block; }
 
 button {
@@ -279,7 +290,7 @@ article.active {
   padding-top: 45px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  cursor: pointer;
+  /* cursor: pointer; */
   z-index: 1;
 }
 
@@ -316,6 +327,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
+  min-width: 300px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
@@ -823,10 +835,14 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
-.timeline-text {
+.timeline-text, .timeline-subtitle {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.timeline-subtitle {
+  font-style: italic;
 }
 
 
@@ -1431,7 +1447,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
   }
 
   .testimonials-text {
@@ -1636,7 +1652,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn {
     width: max-content;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
   
 }
@@ -1855,8 +1871,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
   }
 
   .contact-info :is(.contact-link, time, address) {
@@ -1878,5 +1894,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  .timeline-text * {
+    outline: orange;
+    list-style: circle;
+    margin-left: 15px;
+}
 
 }

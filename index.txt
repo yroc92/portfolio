@@ -2,14 +2,14 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Cory Cooper
+Cory Cooper
 Web developer
 
 Show Contacts
 
 Email
-richard@example.com
+coopercory92@gmail.com
 
 Phone
 +1 (213) 352-2795
