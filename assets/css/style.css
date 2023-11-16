@@ -644,6 +644,10 @@ main {
   overflow: hidden;
 }
 
+.testimonials-text > p {
+  margin-bottom: 15px;
+}
+
 
 /**
  * #testimonials-modal
